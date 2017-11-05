@@ -10,6 +10,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from '@angular/core';
 var RestaurantsComponent = (function () {
     function RestaurantsComponent() {
+        this.restaurants = [
+            {
+                id: 'bread-bakery',
+                name: 'Bread & Bakery',
+                category: 'Bakery',
+                deliveryEstimate: '25m',
+                rating: 4.9,
+                imagePath: 'assets/img/restaurants/breadbakery.png',
+            },
+            {
+                id: 'burger-house',
+                name: 'Burger House',
+                category: 'Hamburgers',
+                deliveryEstimate: '100m',
+                rating: 3.5,
+                imagePath: 'assets/img/restaurants/burgerhouse.png',
+            },
+        ];
     }
     RestaurantsComponent.prototype.ngOnInit = function () {
     };
