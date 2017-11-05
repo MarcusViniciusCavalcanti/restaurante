@@ -14,23 +14,23 @@ import { HomeComponent } from './home/home.component';
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        NgModule({
+            declarations: [
+                AppComponent,
+                HeaderComponent,
+                HomeComponent
+            ],
+            imports: [
+                BrowserModule,
+                HttpModule,
+                RouterModule
+            ],
+            providers: [],
+            bootstrap: [AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    NgModule({
-        declarations: [
-            AppComponent,
-            HeaderComponent,
-            HomeComponent
-        ],
-        imports: [
-            BrowserModule,
-            HttpModule,
-            RouterModule
-        ],
-        providers: [],
-        bootstrap: [AppComponent]
-    })
-], AppModule);
 export { AppModule };
 //# sourceMappingURL=app.module.js.map
