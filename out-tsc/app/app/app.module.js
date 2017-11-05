@@ -10,6 +10,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,7 +20,8 @@ AppModule = __decorate([
     NgModule({
         declarations: [
             AppComponent,
-            HeaderComponent
+            HeaderComponent,
+            HomeComponent
         ],
         imports: [
             BrowserModule,
