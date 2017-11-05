@@ -8,20 +8,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-var AppComponent = (function () {
-    function AppComponent() {
-        this.content = 'Welcome do Meat App!';
+var AboutComponent = (function () {
+    function AboutComponent() {
     }
-    AppComponent.prototype.ngOnInit = function () {
+    AboutComponent.prototype.ngOnInit = function () {
     };
-    AppComponent = __decorate([
+    AboutComponent = __decorate([
         Component({
-            selector: 'mt-app',
-            templateUrl: 'app.component.html'
+            selector: 'mt-about',
+            templateUrl: './about.component.html',
         }),
         __metadata("design:paramtypes", [])
-    ], AppComponent);
-    return AppComponent;
+    ], AboutComponent);
+    return AboutComponent;
 }());
-export { AppComponent };
-//# sourceMappingURL=app.component.js.map
+export { AboutComponent };
+//# sourceMappingURL=about.component.js.map

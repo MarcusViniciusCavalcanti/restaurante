@@ -6,11 +6,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ROUTES } from './app.routes';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,12 +20,12 @@ var AppModule = (function () {
             declarations: [
                 AppComponent,
                 HeaderComponent,
-                HomeComponent
+                HomeComponent,
+                AboutComponent
             ],
             imports: [
                 BrowserModule,
-                HttpModule,
-                RouterModule
+                RouterModule.forRoot(ROUTES)
             ],
             providers: [],
             bootstrap: [AppComponent]
